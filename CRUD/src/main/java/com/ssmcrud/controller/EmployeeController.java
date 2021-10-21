@@ -28,6 +28,8 @@ public class EmployeeController {
         List<Employee> emps = employeeService.getAll();
         PageInfo page = new PageInfo(emps,10);
         model.addAttribute("pageInfo",page);
+        System.out.println("1111");
+        System.out.println("2222");
         return "list";
     }
 }
